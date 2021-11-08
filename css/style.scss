@@ -68,21 +68,17 @@ body{
     *{
         font-family:'AK-REGULAR';   
         p{
-          font-size: 18px;
-        } 
-      
+          font-size: 20px;
+        }   
         h2{
           font-size: 28px;
           font-family:'AK-BOLD'; 
         }
         h3{
-          font-size: 17px;
+          font-size: 23px;
           font-family:'AK-BOLD';   
         }
-
-    }
-    
-   
+    }   
 }
 header{
   position:relative;
@@ -150,18 +146,16 @@ header{
       flex-direction: column;   
       justify-content: center;
       position: fixed;
-      top: 47px;
+      top: 64px;
       left: 100%; 
       width: 100%;
-      height: 500px;
-      background-color:rgba(0, 0, 0, 0.555);
+      height: 100vh;
+      background-color:#262626;
       padding-top: 120px;
-      transition: 0.4s;
-  
-      z-index: 2;
-      
-          padding: 0px 0px 114px 50px;
-          a{ 
+      transition: 0.4s ease-in-out;
+      z-index: 3; 
+      padding: 0px 0px 114px 50px;
+      a{ 
               color: white;
               text-align: center;
               font-size: 17px;
@@ -169,7 +163,7 @@ header{
   
         
   
-      }
+        }
       button{
         width: 50%;
         margin: 0 auto;
@@ -189,6 +183,8 @@ header{
     align-items: center;
     justify-content: center;
     h1{
+      position: relative;
+      z-index: 2;
       display: block;
        span{
         font-size: 30px;
@@ -199,7 +195,7 @@ header{
   }
   .image{
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 49%;
     left: 7rem;    
     bottom: -10rem;
@@ -233,7 +229,7 @@ header{
   background-color: #E8DFCE;
    
   p{
-    font-size: 16px;
+
     text-align: center;
   }
   h2{
@@ -269,7 +265,7 @@ header{
     padding-bottom:10px;
   }
   p{
-    font-size: 15px;
+  
   }
   
   .cards{
@@ -299,6 +295,9 @@ header{
   }
   .ethels{
     padding-top: 20px;
+    a{
+      font-size: 17px;
+    }
     .left-arrow, .right-arrow{
       position: absolute;
       background-color: #E8DFCE;
@@ -309,15 +308,10 @@ header{
     .left-arrow{
       bottom: 46px;
       right: 141px;
-     
-   
-      
     }
     .right-arrow{
       bottom: 46px;
       right: 89px;
-      
-
     }
     .inner{
       .info{
@@ -339,29 +333,26 @@ header{
     background-size: cover;
     .info{
       padding: 180px 0 50px ;
-
       p{
-        font-size: 15px;
         padding-top: 20px;
+      }
+      .btn{
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 3px 22px;
       }
     }
   }
- 
-
 }
 footer{
   padding-bottom: 40px;
   background-color: #262626;
   text-align: center;
   .inner{
-    padding-top: 71px;
-    .image{
-
-    }
+    padding-top: 71px; 
     p,a{
-      font-size: 15px;
+      font-size: 20px;
     }
-  
     #top-para{
       padding-bottom: 30px;
     }
@@ -375,7 +366,9 @@ footer{
       padding-top: 20px;
       li{
         color: #ffff;
-        // list-style: disc;
+        display: flex;
+        padding-top: 10px;
+        padding-left: 102px;
         font-size: 14px ;
         a{
           color: white;
@@ -403,6 +396,9 @@ footer{
           height: 41px;
           font-size: 15px;
           line-height: 0;
+        }
+        p{
+          font-size: 18px;
         }
     }
   }
@@ -462,7 +458,6 @@ footer{
       flex-direction: column;
       justify-content: center;
       flex-wrap: wrap;
-      font-size: 15px;
       span{
         padding-bottom:8px;
       }
@@ -488,10 +483,8 @@ footer{
   }
   .our-values{
     padding: 70px 0;
- 
-     
     p{
-      font-size: 18px;
+      
       text-align: start;
     }
     h2{
@@ -533,11 +526,7 @@ footer{
     text-align: start;
     .top{
       padding-bottom:10px;
-    }
-    p{
-      font-size: 15px;
-    }
-    
+    } 
     .cards{
       display: flex;
       justify-content: space-between;
@@ -653,19 +642,16 @@ footer{
             display: block;
           }
         }
-        
       }
       .image{
         position: absolute;
         top:0;
         right: 0;
-        width: 47%;
+        width: 50%;
         img{
-          height: 382px;
+          height: 429px;
         }
       }
-   
-  
     }
   }
   footer{
@@ -678,7 +664,7 @@ footer{
           width: 74%;
       }
       p,a{
-        font-size: 15px;
+       font-size: 21px;
       }
       h2{
         font-size: 22px;
@@ -687,9 +673,9 @@ footer{
       .email,.phone,.location{
          display: flex;
          align-items: center;
-         padding-bottom: 20px;
+         padding-bottom: 60px;
          img{
-           width: 23%;
+           width: 30%;
          }
          a,p{
            font-size: 17px;
@@ -714,7 +700,7 @@ footer{
         padding-top: 0px;
         li{
           color: #ffff;
-          // list-style: disc;
+          padding-left: 0;
          
           a{
             color: white;
@@ -728,6 +714,9 @@ footer{
     }   
     hr{
       margin: 50px 0;
+    }
+    #last-inner{
+      padding-left: 43px;
     }
   
   }
@@ -1016,8 +1005,9 @@ footer{
             display: block;
           }
         }
-        button{
+        .btn{
           margin: 45px 0;
+          font-size: 25px;
         }
         
       }
@@ -1081,8 +1071,7 @@ footer{
         padding-top: 0px;
         li{
           color: #ffff;
-          // list-style: disc;
-         
+          padding-left: 0;
           a{
             color: white;
             font-size: 17px ;
