@@ -217,6 +217,7 @@ header .banner h1 {
 
 header .banner h1 span {
   font-size: 30px;
+  font-family: 'AK-BOLD';
 }
 
 header .image {
@@ -360,6 +361,19 @@ header .image {
 
 .portfolio .ethels .left-arrow, .portfolio .ethels .right-arrow {
   position: absolute;
+  background-color: #E8DFCE;
+  padding: 5px 12px;
+  z-index: 3;
+}
+
+.portfolio .ethels .left-arrow {
+  bottom: 46px;
+  right: 141px;
+}
+
+.portfolio .ethels .right-arrow {
+  bottom: 46px;
+  right: 89px;
 }
 
 .portfolio .ethels .inner .info p {
@@ -418,7 +432,6 @@ footer .inner ul {
 
 footer .inner ul li {
   color: #ffff;
-  list-style: disc;
   font-size: 14px;
 }
 
@@ -431,21 +444,30 @@ footer hr {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body * {
+    line-height: 1.5;
+  }
   body * h2 {
     font-size: 32px;
   }
+  body * .btn {
+    width: 149px;
+    height: 41px;
+    font-size: 15px;
+    line-height: 0;
+  }
   header {
-    height: 55vh;
+    height: 44vh;
   }
   header .logo {
     width: 22%;
   }
   header .overlay {
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: 0px;
   }
   header .overlay img {
-    height: 58vh;
+    height: 46vh;
   }
   header #desktop-nav li a {
     color: black;
@@ -478,8 +500,8 @@ footer hr {
   }
   header .image {
     width: 37%;
-    left: 23rem;
-    bottom: -11rem;
+    left: 22rem;
+    bottom: -13rem;
   }
   .about-us {
     padding: 115px 0;
@@ -563,11 +585,8 @@ footer hr {
             flex-direction: column;
     text-align: center;
   }
-  .our-values #cards .card:first-child, .our-values #cards .card:last-child {
-    margin-top: 0px;
-  }
   .debut-team {
-    padding: 70px 0;
+    padding: 50px 0;
     text-align: start;
   }
   .debut-team .top {
@@ -586,6 +605,7 @@ footer hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 78px;
   }
   .debut-team .cards .card {
     -webkit-box-orient: vertical;
@@ -616,6 +636,21 @@ footer hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .debut-team .card.card:first-child {
+    padding-top: 30px;
+  }
+  .debut-team .card.card:first-child a {
+    padding-bottom: 30px;
+  }
+  .debut-team .card.card:first-child .image img {
+    height: 122.94px;
+  }
+  .debut-team .card:last-child {
+    padding-top: 30px;
+  }
+  .debut-team .card:last-child a {
+    padding-bottom: 30px;
   }
   .portfolio {
     text-align: center;
@@ -654,15 +689,21 @@ footer hr {
     width: 401px;
   }
   .portfolio .ethels .left-arrow {
-    bottom: 70px;
-    right: 194px;
+    bottom: 54px;
+    right: 160px;
     z-index: 3;
+    background-color: #E8DFCE;
+    padding: 5px 12px;
   }
   .portfolio .ethels .right-arrow {
-    bottom: 70px;
-    left: 200px;
+    bottom: 54px;
+    right: 108px;
+    z-index: 3;
+    background-color: #E8DFCE;
+    padding: 5px 12px;
   }
   .get-in-touch {
+    padding-top: 50px;
     position: relative;
     text-align: start;
   }
@@ -670,7 +711,7 @@ footer hr {
     position: relative;
   }
   .get-in-touch .inner .info {
-    padding: 180px 0 50px;
+    padding: 94px 0 45px;
   }
   .get-in-touch .inner .info p {
     display: -webkit-box;
@@ -712,6 +753,22 @@ footer hr {
   }
   footer .inner h2 {
     font-size: 22px;
+    padding-bottom: 22px;
+  }
+  footer .inner .email, footer .inner .phone, footer .inner .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+  }
+  footer .inner .email img, footer .inner .phone img, footer .inner .location img {
+    width: 23%;
+  }
+  footer .inner .email a, footer .inner .email p, footer .inner .phone a, footer .inner .phone p, footer .inner .location a, footer .inner .location p {
+    font-size: 17px;
   }
   footer .inner #top-para {
     padding-bottom: 30px;
@@ -729,18 +786,400 @@ footer hr {
     border-radius: 50%;
   }
   footer .inner ul {
-    padding-top: 20px;
+    padding-top: 0px;
   }
   footer .inner ul li {
     color: #ffff;
-    list-style: disc;
-    font-size: 14px;
   }
   footer .inner ul li a {
     color: white;
+    font-size: 17px;
   }
   footer #first-inner {
+    padding-top: 47px;
+  }
+  footer hr {
+    margin: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body * {
+    line-height: 1.5;
+  }
+  body * h2 {
+    font-size: 60px;
+  }
+  body * h3 {
+    font-size: 23px;
+  }
+  body * p {
+    font-size: 25px;
+  }
+  body * .btn {
+    width: 217px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 0;
+  }
+  header {
+    height: 66vh;
+    padding-bottom: 70px;
+  }
+  header .logo {
+    width: 22%;
+  }
+  header .overlay {
+    top: -75px;
+    left: 0px;
+  }
+  header .overlay img {
+    height: 85vh;
+  }
+  header #desktop-nav li a {
+    color: black;
+    font-size: 21px;
+    padding-right: 21px;
+  }
+  header nav {
+    height: 10vh;
+  }
+  header .banner {
+    height: 24vh;
+  }
+  header .banner h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 96px;
+  }
+  header .banner h1 span {
+    font-size: 61px;
+  }
+  header .image {
+    width: 60%;
+    left: 38rem;
+    bottom: -30rem;
+  }
+  .about-us {
+    padding: 300px 0 136px;
+    text-align: start;
+  }
+  .about-us p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-us p span {
+    padding-bottom: 8px;
+  }
+  .about-us h3 {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+  .about-us .top-info {
+    padding: 23px 0;
+  }
+  .about-us .image {
+    padding-top: 30px;
+    width: 704px;
+    text-align: end;
+  }
+  .about-us .image img {
+    height: 573px;
+  }
+  .about-us #left-inner {
+    padding-left: 86px;
+  }
+  .our-values {
+    padding: 70px 0;
+  }
+  .our-values p {
+    text-align: start;
+    font-size: 20px;
+  }
+  .our-values h2 {
+    text-align: start;
+    padding-bottom: 30px;
+  }
+  .our-values #cards {
+    padding-top: 50px;
+  }
+  .our-values #cards .card {
+    margin-top: 135px;
+    background-color: #E8DFCE;
+    border: none;
+  }
+  .our-values #cards .card .card-image {
+    width: 150px;
+    height: auto;
+    padding-bottom: 0px;
+  }
+  .our-values #cards .card h3 {
+    font-size: 41px;
+    padding-bottom: 10px;
+  }
+  .our-values #cards .card p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+  }
+  .our-values #cards .card:first-child, .our-values #cards .card:last-child {
+    margin-top: 0px;
+  }
+  .our-values #cards .card:first-child .card-image, .our-values #cards .card:last-child .card-image {
+    padding-bottom: 30px;
+  }
+  .debut-team {
+    padding: 50px 0;
+    text-align: start;
+  }
+  .debut-team .top {
+    padding: 0 54px 10px 0;
+  }
+  .debut-team p, .debut-team a {
+    font-size: 20px;
+  }
+  .debut-team .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 83px;
+  }
+  .debut-team .cards .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    margin-bottom: 70px;
+  }
+  .debut-team .cards .card a {
+    padding: 10px 0;
+  }
+  .debut-team .cards .card .image {
+    padding: 10px 0;
+  }
+  .debut-team .cards .card p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .debut-team .card.card:first-child {
+    padding-top: 8px;
+  }
+  .debut-team .card.card:first-child a {
+    padding-bottom: 30px;
+  }
+  .debut-team .card.card:first-child .image img {
+    height: 233px;
+  }
+  .debut-team .card:last-child {
+    padding-top: 8px;
+  }
+  .debut-team .card:last-child a {
+    padding-bottom: 30px;
+  }
+  .portfolio {
+    padding-bottom: 120px;
+    text-align: start;
+  }
+  .portfolio h2, .portfolio #top-para {
+    text-align: center;
+  }
+  .portfolio #top-para {
+    padding: 10px;
+    font-size: 21px;
+  }
+  .portfolio .ethels {
+    position: relative;
     padding-top: 20px;
+  }
+  .portfolio .ethels .inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio .ethels .inner .info {
+    padding-left: 106px;
+  }
+  .portfolio .ethels .inner .info h3 {
+    font-size: 28px;
+  }
+  .portfolio .ethels .inner .info p {
+    padding: 0px;
+    font-size: 25px;
+  }
+  .portfolio .ethels .inner .info a {
+    font-size: 18px;
+  }
+  .portfolio .ethels .inner .image {
+    width: 594px;
+  }
+  .portfolio .ethels .inner .image img {
+    height: 542px;
+  }
+  .portfolio .ethels .left-arrow {
+    bottom: 82px;
+    right: 293px;
+    z-index: 3;
+    background-color: #E8DFCE;
+    padding: 5px 12px;
+  }
+  .portfolio .ethels .right-arrow {
+    bottom: 82px;
+    right: 242px;
+    z-index: 3;
+    background-color: #E8DFCE;
+    padding: 5px 12px;
+  }
+  .get-in-touch {
+    padding-top: 50px;
+    position: relative;
+    text-align: start;
+  }
+  .get-in-touch .inner {
+    position: relative;
+  }
+  .get-in-touch .inner .info {
+    padding: 178px 0 0px 120px;
+  }
+  .get-in-touch .inner .info p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 0px;
+  }
+  .get-in-touch .inner .info p span {
+    display: block;
+  }
+  .get-in-touch .inner .info button {
+    margin: 45px 0;
+  }
+  .get-in-touch .inner .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 667px;
+  }
+  .get-in-touch .inner .image img {
+    height: 588px;
+  }
+  footer {
+    padding-bottom: 40px;
+    background-color: #262626;
+    text-align: start;
+  }
+  footer .inner {
+    padding-top: 71px;
+  }
+  footer .inner .image {
+    width: 74%;
+  }
+  footer .inner p, footer .inner a {
+    font-size: 15px;
+  }
+  footer .inner h2 {
+    font-size: 22px;
+    padding-bottom: 22px;
+  }
+  footer .inner .email, footer .inner .phone, footer .inner .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+  }
+  footer .inner .email img, footer .inner .phone img, footer .inner .location img {
+    width: 17%;
+  }
+  footer .inner .email a, footer .inner .email p, footer .inner .phone a, footer .inner .phone p, footer .inner .location a, footer .inner .location p {
+    font-size: 20px;
+  }
+  footer .inner #top-para {
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+  footer .inner #top-para span {
+    padding-bottom: 10px;
+  }
+  footer .inner .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .inner .social-links a {
+    font-size: 25px;
+    border-radius: 50%;
+  }
+  footer .inner ul {
+    padding-top: 0px;
+  }
+  footer .inner ul li {
+    color: #ffff;
+  }
+  footer .inner ul li a {
+    color: white;
+    font-size: 17px;
+  }
+  footer #first-inner {
+    padding-top: 47px;
   }
   footer hr {
     margin: 50px 0;
