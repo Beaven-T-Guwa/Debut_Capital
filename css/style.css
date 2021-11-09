@@ -843,11 +843,11 @@ footer hr {
     width: 22%;
   }
   header .overlay {
-    top: -75px;
+    top: -90px;
     left: 0px;
   }
   header .overlay img {
-    height: 85vh;
+    height: 91vh;
   }
   header #desktop-nav li a {
     color: black;
